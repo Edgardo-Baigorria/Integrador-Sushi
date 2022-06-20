@@ -192,11 +192,10 @@ label {
 
 
 .header-contain h1 {
-    padding: 1rem;
+    padding: .5rem;
     border-right: 1px solid var(--blanco);
     border-top: 1px solid var(--blanco);
-    margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .header-plate {
@@ -411,9 +410,9 @@ label {
     opacity: 1;
 }
 
-
 .galeria .fotos a img {
     width: 100%;
+    min-width: 425px;
 }
 
 .galeria .fotos .contenedor-abajo {
@@ -612,6 +611,7 @@ footer .creditos {
 
     .header-contain h1 {
         font-size: 2rem;
+        padding: 1rem;
     }
 
     .header-plate img {

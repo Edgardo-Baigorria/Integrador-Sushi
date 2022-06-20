@@ -117,6 +117,7 @@ form h1 {
     text-transform: uppercase;
     color: var(--blanco);
     padding-bottom: 1.25rem;
+    text-align: center;
 }
 
 form input {
@@ -136,6 +137,8 @@ form input[type="submit"] {
     font-size: 1rem;
     border-radius: 0 0 15px 0;
     cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 form input[type=text],
@@ -194,7 +197,8 @@ form a {
         ;
     }
 
-    .contenedor .izq .palillos {
+    .contenedor .izq .palillos,
+    .palillos2 {
         display: none;
     }
 
