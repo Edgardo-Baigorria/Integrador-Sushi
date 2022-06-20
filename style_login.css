@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&display=swap');
+
+@font-face {
+    font-family: 'Mart';
+    src: url('fonts/Mart-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+:visited,
+:active {
+    color: var(--blanco);
+}
+
+a:hover {
+    color: var(--gris-claro);
+    transition: .5s color;
+}
+
+:root {
+    --semi-bold: 600;
+    --negro: #1B1B1B;
+    --gris: #434041;
+    --rojo: #b90b24;
+    --blanco: white;
+    --gris-claro: #979797;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: "Mart", sans-serif;
+    background-image: url(img/fondo-header.jpg);
+    background-size: cover;
+}
+
+main {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background-image: url(img/fondo-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    max-width: 850px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 75px 0 75px 0;
+}
+
+.izq {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.izq .logo {
+    width: 100%;
+    padding: 2rem;
+}
+
+.izq .palillos {
+    position: absolute;
+    right: 25px;
+    bottom: -170px;
+    width: 700px;
+}
+
+.izq .palillos2 {
+    position: absolute;
+    right: 25px;
+    bottom: -170px;
+    width: 350px;
+}
+
+.der {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 75px 0;
+    position: relative;
+}
+
+.der form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 400px;
+}
+
+form h1 {
+    text-transform: uppercase;
+    color: var(--blanco);
+    padding-bottom: 1.25rem;
+}
+
+form input {
+    margin: 2px;
+    width: 100%;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+form input[type="submit"] {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    font-family: "Mart", sans-serif;
+    font-weight: var(--semi-bold);
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 0 0 15px 0;
+    cursor: pointer;
+}
+
+form input[type=text],
+input[type=password],
+input[type=email] {
+    padding-left: 10px;
+    padding-bottom: 2px;
+    font-family: 'Charis SIL', serif;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+input[type=text] {
+    border-radius: 15px 0 0 0;
+}
+
+form a {
+    padding-top: .4rem;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+.der .volver {
+    position: absolute;
+    left: -1.5rem;
+    bottom: 1rem;
+    background: var(--rojo);
+    padding: .35rem .5rem;
+    border-radius: .5rem 0 .5rem 0;
+    text-transform: uppercase;
+}
+
+@media (max-width:720px) {
+
+    .contenedor {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .izq .logo {
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+    }
+
+    .contenedor .der,
+    .izq {
+        width: 100%;
+    }
+
+    .contenedor .izq {
+        height: 10vh;
+        ;
+    }
+
+    .contenedor .izq .palillos {
+        display: none;
+    }
+
+    .contenedor .der {
+        height: 90vh;
+    }
+
+    .der .volver {
+        top: auto;
+        left: 44%;
+    }
+
+
+
+
+}
