@@ -477,6 +477,8 @@ input[type="submit"] {
     font-size: 1rem;
     border-radius: 0 0 15px 0;
     cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0 0 15px 0;
 }
 
 input[type=text],
